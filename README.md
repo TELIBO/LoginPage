@@ -22,7 +22,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Credits
 
-This project was created by [Your Name].
+This project was created by [Sanjay Sajnani].
 
 Feel free to modify and use this code according to your needs. Contributions are welcome!
 
