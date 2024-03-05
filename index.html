@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            OliviaLogin 
+        </title>
+        <link rel="icon" href="backiee-88851.jpg" type="image/x-icon"/>
+        <Style>
+            .homepage{
+                background-color: rgb(125, 209, 237);
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+           .loginpage{
+            background-color: rgb(251, 255, 255);
+            display:flex;
+            flex-direction:column;
+            width:350px;
+            margin-top: 50px;
+           }
+           .up{
+            display:flex;
+            flex-direction: column;
+            padding:10px;
+            height:430px;
+            border-color: rgb(194, 194, 194);
+            border-style:solid;
+            border-width:0.8px;
+           }
+           .header{
+            flex:1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:30px;
+            font-weight: bold;
+           }
+           .title{
+            font-size:60px;
+            font-family:   Arial, sans-serif;
+           }
+           .body{
+            flex:4;
+            padding-top:20px;
+            height:214px;
+           }
+           .in{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+            
+           }
+           .book{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height:100%;
+           }
+           .or{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:8px 0 8px 0;
+            margin-bottom:10px;
+           }
+           .orr{
+            font-size: 20px;
+            color:rgb(62, 60, 60);
+            margin-right: 11px;
+           }
+           .facebook{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .forgot{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            padding-right: 25px;
+            color:rgb(105, 103, 103);
+            font-size: 14px;
+            cursor: pointer;
+           }
+           .output{
+            width:268px;
+            height:29px;
+            margin-bottom:2px;
+            border-style:solid;
+            border-width:0.8px;
+            border-color: rgb(194, 194, 194);
+            padding:9px 0px 7px 8px;
+            background-color: rgb(250, 250, 250);
+           }
+           .name,.password{
+            width:258px;
+            height:27px;
+            border:none;
+            background-color: rgb(250, 250, 250);
+            outline: none;
+           }
+           .logq{
+            width:278px;
+            height:32px;
+            border-radius: 12px;
+            margin-right:2px;
+            border:none;
+            background-color: rgb(95, 123, 235);
+            color:white;
+            font-size: medium;
+            font-weight: 600;
+            cursor: pointer;
+           }
+           .logq:hover{
+            opacity:0.8;
+           }
+           .facebook{
+            width:268px;
+            height:20px;
+            padding-left:16px;
+           }
+           .meta{
+            height:25px;
+            width:25px;
+           }
+           .pictext{
+            color:rgb(54, 54, 131);
+            margin-left: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            padding-bottom: 3px;
+           }
+           .signup{
+            background-color: white;
+            margin-top:14px;
+            width:350px;
+            height:70px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-color: rgb(194, 194, 194);
+            border-style:solid;
+            border-width:0.8px;
+            font-size: 17px;
+           }
+           .span{
+            color:rgb(82, 149, 242);
+            font-weight: bold;
+            cursor: pointer;
+           }
+           .play{
+            height:43px;
+            width:160px;
+           }
+           .playt{
+            height:43px;
+            width:150px;
+           }
+           .apps{
+            width:350px;
+            height:70px;
+            margin-top: 12px;
+           }
+           .writeup{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: normal;
+            color:black;
+            margin-right: 20px;
+            margin-bottom: 10px;
+           }
+           .images{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            padding:10px;
+            column-gap: 2px;
+           }
+           .footer {
+            background-color: rgb(94, 91, 91);
+            color: white;
+            text-align: center;
+            padding: 16px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        </Style>
+    </head>
+    <body class="homepage" >
+            <div class="loginpage">
+                <div class="up">
+                    <div class="header">
+                        <div class="title">
+                            Olivia
+                        </div>
+                    </div>
+                    <div class="body">
+                        <form action="https://telibo.github.io/olivia/"  target="_parent" onsubmit="return validateForm()">
+                        <div class="in">
+                            <div class="output">
+                            <input placeholder="Phonenumber,username or email " class="name" type="text" id="username"required >                             </div>
+                        </div>
+                        <div class="in">
+                            <div class="output" >
+                                <input placeholder="Password" type="password" class="password" id="password" required>                            </div>
+                        </div>
+                        <div class="in">
+                            <div class="logt">
+                                    <button class="logq" type="submit">Log in</button>
+                            </div>
+                        </div>
+                        </form>
+                        <div class="or">
+                            <div class="orr" >
+                               -------------or-------------
+                            </div>
+                        </div>
+                        <div class="facebook">
+                             <div class="pic">
+                                <img class="meta" src="image-removebg-preview (17).png">
+                            </div>
+                            <div class="pictext">
+                                Log in with Facebook
+                            </div>
+                         </div>
+                        </div>
+                        <div class="forgot">
+                            <div>
+                                Forgot password?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="signup">
+                    Dont't have an account? <span class="span">Sign up</span>
+                </div>
+                <div class="apps">
+                    <div class="writeup">
+                        Get the app
+                    </div>
+                    <div class="images">
+                        <div>
+                        <img src="c5Rp7Ym-Klz.png"    class="play">
+                        </div>
+                        <div>
+                        <img src="EHY6QnZYdNX.png"     class="playt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span>&copy; 2024 Olivia - All rights reserved</span>
+                <span>Follow us:</span>
+                <a href="https://www.instagram.com/olivia/" target="_blank">Instagram</a>
+                <span>|</span>
+                <a href="#">About</a>
+                <span>|</span>
+                <a href="#">Help</a>
+                <span>|</span>
+                <a href="#">Press</a>
+                <span>|</span>
+                <a href="#">API</a>
+                <span>|</span>
+                <a href="#">Jobs</a>
+                <span>|</span>
+                <a href="#">Privacy</a>
+                <span>|</span>
+                <a href="#">Terms</a>
+                <span>|</span>
+                <a href="#">Locations</a>
+                <span>|</span>
+                <a href="#">Top Accounts</a>
+                <span>|</span>
+                <a href="#">Hashtags</a>
+                <span>|</span>
+                <a href="#">Language</a>
+            </div>
+            <script>
+                function validateForm() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+        
+                    // Basic validation, you can customize this as needed
+                    if (username !== "sanjay" || password !== "abudhabi@1234") {
+                        alert("hey!hey! Invalid username or password!");
+                        return false;
+                    }
+        
+                    // Additional validation logic can be added here
+        
+                    return true; // Form will be submitted only if all validations pass
+                }
+            </script>
+    </body>
+</html>
